@@ -52,7 +52,7 @@ Bước 6: Nhấn F12 để mở Developer Tools, chọn tab Network và tab Con
 
 
 ##### KHẮC PHỤC  (Sau khi fix) hacker sẽ không truy cập được vào đánh cắp thông tin !
-Đây là phần chứng minh giải pháp của nhóm bạn hoạt động hiệu quả.
+Đây là phần chứng minh giải pháp của nhóm em hoạt động hiệu quả.
 
 Bước 1: Sửa file server.js để whitelist chỉ nhận http://localhost:5500 (hoặc domain hợp lệ).  
 
