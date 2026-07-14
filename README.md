@@ -52,7 +52,7 @@ Bước 6: Nhấn F12 để mở Developer Tools, chọn tab Network và tab Con
 
 
 ##### KHẮC PHỤC  (Sau khi fix) hacker sẽ không truy cập được vào đánh cắp thông tin !
-Đây là phần chứng minh giải pháp của nhóm em hoạt động hiệu quả.
+Đây là phần chứng minh giải pháp của nhóm chúng em  hoạt động hiệu quả.
 
 Bước 1: Sửa file server.js để whitelist chỉ nhận http://localhost:5500 (hoặc domain hợp lệ).  
 
@@ -64,7 +64,7 @@ Bước 1: Sửa file server.js để whitelist chỉ nhận http://localhost:55
 
 + Bằng chứng: Trong tab Console của trình duyệt sẽ hiển thị lỗi đỏ: "Access to XMLHttpRequest at... blocked by CORS policy". Điều này xác nhận hệ thống đã được bảo vệ thành công trước hành vi truy cập trái phép từ các domain lạ.
 
-+ "Thay vì dùng wildcard () vốn cho phép tất cả, chúng em đã triển khai danh sách whitelist. Như vậy, chỉ những domain được cấp phép mới nhận được header Access-Control-Allow-Origin từ server, giúp ngăn chặn triệt để việc dữ liệu bị đánh cắp bởi các trang web độc hại."*
++ "Thay vì dùng wildcard () vốn cho phép tất cả, nhóm em đã triển khai danh sách whitelist. Như vậy, chỉ những domain được cấp phép mới nhận được header Access-Control-Allow-Origin từ server, giúp ngăn chặn triệt để việc dữ liệu bị đánh cắp bởi các trang web độc hại."*
 
 Bước 2: Refresh lại website độc hại (evil.html).  "KHI TRUY CẬP SẼ KHÔNG CÒN HIỂN THỊ THÔNG TIN NỮA"
 
