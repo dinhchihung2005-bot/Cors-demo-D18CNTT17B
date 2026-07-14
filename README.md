@@ -4,7 +4,7 @@ Nhóm thực hiện:
 - Đinh Chí Hùng (MSV: 2382160008)
 - Đỗ Văn Chức (MSV: 2382160004)
 - Hoàng Minh Đức (MSV: 2382160005)
-PHÂN CHIA CÔNG VIỆC :
+
 ### PHÂN CHIA CÔNG VIỆC
 
 | STT | Họ và tên | Mã sinh viên | Nhiệm vụ chính | Tỷ trọng |
@@ -13,7 +13,12 @@ PHÂN CHIA CÔNG VIỆC :
 | 2 | Đỗ Văn Chức | 2382160004 |Dựng giao diện, thiết kế các thành phần hiển thị, viết phần "Mô tả giao diện" trong báo cáo.  | 25% |
 | 3 | Hoàng Minh Đức | 2382160005 | Sưu tầm tài liệu lý thuyết, trình bày văn bản (format, chỉnh sửa), thực hiện kiểm thử và ghi lại kết quả | 25% |
 
-######## CÁC BƯỚC THỰC HIỆN 
+###### GIỚI THIỆU ĐỀ TÀI 
+
+Đề tài "Nghiên cứu lỗ hổng CORS Misconfiguration và thực nghiệm khai thác Data Exfiltration thông qua Access-Control-Allow-Origin" được thực hiện nhằm tìm hiểu cơ chế hoạt động của CORS và những rủi ro khi máy chủ cấu hình sai chính sách Access-Control-Allow-Origin. Nhóm xây dựng mô hình thực nghiệm gồm Victim Server, Evil Website và Hacker Server để mô phỏng quá trình khai thác lỗ hổng, truy cập trái phép dữ liệu người dùng và thực hiện hành vi Data Exfiltration. Sau đó, đề tài áp dụng cơ chế Whitelist Origin để khắc phục lỗ hổng và đánh giá hiệu quả của giải pháp trong việc ngăn chặn truy cập trái phép.
+
+
+###### CÁC BƯỚC THỰC HIỆN 
 Bước 1: Khởi tạo nạn nhân API server.js có lỗ hổng 
 
 Bước 2: Chạy server server.js (đang để Access-Control-Allow-Origin: * hoặc không giới hạn origin).
@@ -101,4 +106,4 @@ Kết luận:
 'Việc header Access-Control-Allow-Origin này biến mất chính là minh chứng cho thấy: Server đã từ chối cấp quyền truy cập cho nguồn lạ. Đây là cơ chế "Default Deny" (mặc định từ chối) trong bảo mật, đảm bảo dữ liệu của chúng em hoàn toàn an toàn trước mọi truy cập trái phép từ bên ngoài.'
 
 
-         ###### NHÓM EM CẢM ƠN THẦY ĐÃ XEM QUA BÀI LÀM CỦA NHÓM EM Ạ! TRONG BÀI CÓ ĐÔI CHÚT CHƯA TỐT MONG THẦY CHÂM TRƯỚC CHO CHÚNG EM Ạ!###
+         #### NHÓM EM CẢM ƠN THẦY ĐÃ XEM QUA BÀI LÀM CỦA NHÓM EM Ạ! TRONG BÀI CÓ ĐÔI CHÚT CHƯA TỐT MONG THẦY CHÂM TRƯỚC CHO CHÚNG EM Ạ!###
